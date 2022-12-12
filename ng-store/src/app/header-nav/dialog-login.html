@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Login</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter your email</mat-label>
+    <input
+      matInput
+      [formControl]="email"
+      placeholder="pat@example.com"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [formControl]="password" type="password" />
+    <button mat-icon-button matSuffix></button>
+  </mat-form-field>
+
+  <button (click)="onLog()">Login</button>
+</div>
